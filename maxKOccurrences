@@ -1,0 +1,22 @@
+def maxKOccurrences(sequence, words):
+
+    test_str = sequence
+    longestSubs = []
+    length = 0
+
+    for word in words:
+
+        sub_str = word
+
+        # Maximum Consecutive Substring  Occurrence
+        # Using max() + re.findall()
+        res = max(re.findall('((?:' + re.escape(sub_str) + ')*)', test_str), key=len)
+
+        # printing result
+        if (len(res) >0):
+            length = int(len(res) / len(word))
+            longestSubs.append(length)
+        else:
+            longestSubs.append(0)
+
+    return longestSubs
