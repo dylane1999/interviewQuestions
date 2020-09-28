@@ -13,7 +13,7 @@ def goodTuples(a):
 
         occurrences = Counter(windowArray)
         for amount in occurrences:
-            if occurrences[amount] > 2:
+            if occurrences[amount] >= 2:
                 count = count + 1
         windowArray = []
     return count
