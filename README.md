@@ -1,2 +1,2 @@
 # interviewQuestions
-my solutions to interview questions I have recently solved
+my heap of solved interview practice questions
